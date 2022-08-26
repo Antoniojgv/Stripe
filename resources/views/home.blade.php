@@ -17,7 +17,7 @@
                         <div class="btn-group">
                             <button type="button" class="btn btn-sm btn-outline-secondary pay" data-price="{{ $product->default_price}}">Comprar</button>
                         </div>
-                        <small class="text-muted"> €</small>
+                        <small class="text-muted"></small>
                         </div>
                     </div>
                     </div>

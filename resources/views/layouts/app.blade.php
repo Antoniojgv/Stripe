@@ -90,7 +90,7 @@
 <div id="error-message"></div>
 <script>
 (function() {
-  var stripe = Stripe('pk_test_51LaLNQH8JH9FXFkosYdbro31Sqxlgp0CHp0Ep2t657V2mlm7PK18LKahji0lTIuiG3BiqtRAejHTpnJ9pPtjpyYb00dP2DcknB');
+  var stripe = Stripe("<?= env("STRIPE_KEY") ?>");
 
   var checkoutButton = document.getElementById('checkout-button-price_1LaLguH8JH9FXFko75hqi6jk');
   $(".pay").click(function (e) {

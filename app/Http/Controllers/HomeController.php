@@ -24,7 +24,7 @@ class HomeController extends Controller
     public function index()
     {
         $stripe = new \Stripe\StripeClient(
-            'sk_test_51LaLNQH8JH9FXFko4Sr8rIQPAHFZmQeiSWusLNMwu8aAEsLdeTLbUFhT4IoHuJlCnst79Jg4AwXm3SOa4Ow1uj1D00p5fi5MTG'
+            env('STRIPE_SECRET')
         );
         $productos = $stripe->products->all(['limit' => 3]);
         return view('home', compact("productos"));
