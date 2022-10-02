@@ -4,7 +4,7 @@
 <main>
     <div class="album py-5 bg-light">
         <div class="container mb-4">
-            <h2 class="h2">Productos</h2>
+            <h2 class="h2">Productos.</h2>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 @foreach ($productos as $product)
                 <div class="col">
